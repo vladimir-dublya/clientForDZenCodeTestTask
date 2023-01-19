@@ -14,7 +14,7 @@ export const MainPage = () => {
   useEffect(() => {
     const dataFetch = async () => {
       const data = await (
-        await fetch('https://papaya-concha-993cdf.netlify.app/comments/')
+        await fetch('http://localhost:5000/comments/')
       ).json();
 
       // set state when the data received
